@@ -41,6 +41,8 @@ Este dashboard es el resultado final del procesamiento de logs y eventos, diseñ
 
 ### Correlación de Calidad y Cumplimiento Logístico
 <img width="1197" height="861" alt="12" src="https://github.com/user-attachments/assets/752bca4d-b07d-4c71-832f-1daa8effd62a" />
+<img width="1155" height="838" alt="14" src="https://github.com/user-attachments/assets/6a40fd82-c5b5-4c5c-b123-8c1110b2bfce" />
+
 
 - **Análisis de Fidelidad**: Cuantificación del impacto de la logística en la lealtad del cliente, demostrando una caída del 68% en el NPS ante retrasos mayores a una semana.
 - **Auditoría de Atributos de Servicio**: Monitoreo de KPIs de calidad percibida (Limpieza, Amabilidad, Técnica) para asegurar estándares de excelencia en contratistas.
