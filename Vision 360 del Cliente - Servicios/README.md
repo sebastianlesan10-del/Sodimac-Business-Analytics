@@ -1,4 +1,4 @@
-# Sodtrack Intelligence Engine: Ecosistema de Servicios de Instalación 🛠️📊
+# Sodtrack Intelligence Engine: Ecosistema de Servicios de Instalación 
 
 ## Impacto de Negocio
 - **Trazabilidad de Proyectos 360°:** Desarrollé una arquitectura que identifica el estado real de los proyectos (Presupuestado vs. Ejecutado), permitiendo a la gerencia monitorear el pipeline de ventas de servicios.
