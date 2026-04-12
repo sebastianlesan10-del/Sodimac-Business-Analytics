@@ -38,3 +38,14 @@ El siguiente dashboard, desarrollado en Looker Studio, es la interfaz final que 
 * **Propósito**: Transformar miles de comentarios abiertos en insights accionables mediante la clasificación automática de sentimientos y tópicos.
 * **Funcionalidad**: Filtros dinámicos por sentimiento (Positivo/Negativo) y categorías temáticas (Logística, Tienda, Producto) para identificar causas raíz de detractación.
 * **Impacto**: Visibilidad sobre la percepción cualitativa de +50,000 clientes, permitiendo priorizar mejoras en procesos de "Cajas" y "Tiempos de Entrega" basados en la voz directa del consumidor.
+
+### 5. Benchmarking y Comportamiento Omnicanal (ROPO)
+<img width="1677" height="852" alt="8" src="https://github.com/user-attachments/assets/aa7535c6-6001-4e76-87bc-d1761b792f9e" />
+
+* **Comparativa de Banderas**: Monitoreo paralelo de NPS Sodimac vs. Maestro para análisis de posicionamiento competitivo.
+* **Segmentación Estratégica**: Diferenciación de experiencia entre Cliente Hogar y Cliente Profesional para personalización de servicios.
+
+<img width="1710" height="907" alt="32" src="https://github.com/user-attachments/assets/b9be1656-06f0-422b-9ff9-a38b0c84f07e" />
+
+* **Impacto Digital en Tienda (ROPO)**: Medición del efecto de la investigación online en la satisfacción de compra física.
+* **Análisis Geográfico**: Desglose de comportamiento ROPO por zonas y subregiones (Callao, Lima Norte, etc.) para optimizar estrategias de marketing local.
