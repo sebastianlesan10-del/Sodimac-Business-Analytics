@@ -19,8 +19,8 @@ El siguiente dashboard, desarrollado en Looker Studio, es la interfaz final que 
 
 ### 1. Vista General de Indicadores Compañía
 <img width="1175" height="685" alt="1 " src="https://github.com/user-attachments/assets/1cf9a266-9736-43ac-b89d-a540a7720e5b" />
-**Propósito**: Monitoreo de NPS por canales críticos (Tienda, VAD, VEE, C&D) frente al plan operativo.
-**Impacto**: Centralización de más de 80,000 muestras para la toma de decisiones ejecutivas.
+* **Propósito**: Monitoreo de NPS por canales críticos (Tienda, VAD, VEE, C&D) frente al plan operativo.
+* **Impacto**: Centralización de más de 80,000 muestras para la toma de decisiones ejecutivas.
 
 ### 2. Análisis Segmentado por Canal y Metas
 *Esta vista facilita la identificación de desviaciones tácticas respecto a las metas 2025-2026 establecidas por la organización.*
