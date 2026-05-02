@@ -34,5 +34,5 @@ El cruce de estas bases alimenta un dashboard diseñado para responder preguntas
 
 
 ## 💻 Código Fuente
-La lógica de normalización y el join principal se encuentran documentados en el archivo [`nexu_otif_logistics_cx_engine.sql`](./nexu_otif_logistics_cx_engine.sql).
+La lógica de normalización y el join principal se encuentran documentados en el archivo [`Motor de Trazabilidad Logística y Experiencia del Cliente (CX).sql).
 
