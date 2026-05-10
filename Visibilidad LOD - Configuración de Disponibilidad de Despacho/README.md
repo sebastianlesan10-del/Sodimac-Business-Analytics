@@ -21,6 +21,9 @@ Se diseñó y desplegó un pipeline de datos *End-to-End* que extrae la configur
    - **Proyección de Fechas:** Generación de un array dinámico a 14 días para predecir la fecha mínima exacta del próximo despacho hábil.
 4. **Data Visualization & BI:** Dashboard geoespacial interactivo para el monitoreo de capacidad, servicios (24H, 48H, Same Day) y horarios de corte.
 
+<img width="1387" height="821" alt="Lod_1" src="https://github.com/user-attachments/assets/4766f552-f573-4e25-99dd-e0767b1d3c18" />
+
+
 ## 📈 Impacto y Resultados
 La reactivación y refactorización de este flujo de datos generó los siguientes resultados directos en la operación:
 
