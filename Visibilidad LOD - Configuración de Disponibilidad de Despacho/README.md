@@ -32,5 +32,3 @@ La reactivación y refactorización de este flujo de datos generó los siguiente
 * **Visibilidad Logística a Escala:** Se habilitó la proyección y mapeo activo de los tiempos de entrega en **1,380 comunas** a nivel nacional, asegurando el cumplimiento de la promesa al cliente.
 * **Eficiencia Operativa:** Automatización total del flujo, eliminando los cuellos de botella manuales y ahorrando **10 horas-hombre al mes** en tareas operativas y de consolidación.
 
-## 🧠 Core Engineering: Transformación de Fechas (SQL)
-Para evitar bucles procedurales y dependencias complejas, la lógica de días hábiles se resolvió aplicando `UNNEST`, `REGEXP_EXTRACT_ALL` y `MOD` nativos de BigQuery. Esto permitió mapear y proyectar las ventanas de entrega de manera vectorizada, eficiente y altamente escalable directamente en el motor de la base de datos.
