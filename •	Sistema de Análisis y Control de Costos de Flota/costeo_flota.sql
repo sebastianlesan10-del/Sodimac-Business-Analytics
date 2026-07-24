@@ -120,7 +120,7 @@ reservas_costos_agrupados AS (
     NOMBRE_REGION_DESP,
     Peso_Reserva_Total,
 
-    -- 🔑 SUMA del costo por línea
+    --  SUMA del costo por línea
     SUM(precio_cliente_tarifario) AS precio_cliente_tarifario
 
   FROM reservas_costos_1
@@ -195,7 +195,7 @@ base_reservas_visitas_enriquecida AS (
       WHEN LOWER(visit__status) = "pending" THEN 1
       ELSE 0
     END AS visita_no_completada_flag,
-    -- 🔁 Peso final por reserva
+    --  Peso final por reserva
     COALESCE(
       Peso_Reserva,
       AVG(Peso_Reserva) OVER (
@@ -203,7 +203,7 @@ base_reservas_visitas_enriquecida AS (
       )
     ) AS Peso_Reserva_final,
 
-    -- 🔁 Tarifario final por reserva
+    --  Tarifario final por reserva
     COALESCE(
       tarifario_calculado,
       AVG(tarifario_calculado) OVER (
@@ -267,15 +267,15 @@ base_camion AS (
 base_camion_2 AS(
 SELECT
   *,
-  -- ✅ Texto después del último guion
+  --  Texto después del último guion
   TRIM(
     REGEXP_EXTRACT(vehiculo, r'.*-(.*)$')
   ) AS capacidad_raw,
 
-  -- ✅ Tipo de capacidad normalizada
+  --  Tipo de capacidad normalizada
   CASE
   
-  -- ✅ REGLA DURA DE NEGOCIO (manda sobre el texto)
+  --  REGLA DURA DE NEGOCIO (manda sobre el texto)
   WHEN SAFE_CAST(
          REGEXP_EXTRACT(
            REGEXP_EXTRACT(vehiculo, r'.*-(.*)$'),
@@ -296,7 +296,7 @@ SELECT
       THEN 'METROS_CUBICOS'
     ELSE 'DESCONOCIDO'
   END AS tipo_capacidad,
-  -- ✅ Valor numérico limpio (SIN error)
+  --  Valor numérico limpio (SIN error)
   SAFE_CAST(
     REGEXP_EXTRACT(
       REGEXP_EXTRACT(vehiculo, r'.*-(.*)$'),
@@ -347,7 +347,7 @@ costo_vehiculo AS (
     t.*,
 
     CASE
-      -- 🚚 TONELADAS
+      --  TONELADAS
       WHEN tipo_capacidad = 'TONELADAS' THEN
         CASE
           WHEN estiba_flag = 1 AND Zona_Entrega = 'Urbana' THEN tn.est_urb
@@ -356,7 +356,7 @@ costo_vehiculo AS (
           ELSE tn.lej
         END
 
-      -- 📦 METROS CÚBICOS
+      --  METROS CÚBICOS
       WHEN tipo_capacidad = 'METROS_CUBICOS' THEN
         CASE
           WHEN Zona_Entrega = 'Urbana' THEN m3.urb
@@ -367,7 +367,7 @@ costo_vehiculo AS (
     END AS costo_camion
 
   FROM (
-    -- 🔑 Normalizamos la capacidad
+    --  Normalizamos la capacidad
     SELECT
       bc.*,
       CASE
