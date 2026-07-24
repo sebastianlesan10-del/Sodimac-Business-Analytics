@@ -147,14 +147,14 @@ CC_FILE = r"C:\Users\jsantoses\OneDrive - Falabella\Escritorio\OneDrive - Falabe
 
 
 # API RAPPI
-API_URL = "https://services.rappi.pe/api/cargo-api-gateway/v3/order-create"
-GOOGLE_API_KEY = "AIzaSyAIehMzNo5446IsaTkColswttr0rKbVOPU"
+API_URL = "https://services.xxxxxxxxxxx/xxxxxxxxxxxxxxxx/xxxxxxxx"
+GOOGLE_API_KEY = "AxxxxxxxxxIzaSysaTkCxxxxxxxxxxxVOxxxxxxxU"
 
 HEADERS = {
     "Content-Type": "application/json",
-    "retailer_id": "111000066966",
-    "user_id": "2017",
-    "user-token": "a0ecc42841b2eea57e3664e759efb68c",
+    "retailer_id": "xxxxxxxxxx",
+    "user_id": "xxxx",
+    "user-token": "xxxxxxxxxxxx",
     "Retailer": "Sodimac"
 }
 
@@ -168,7 +168,7 @@ HEADERS = {
 def limpiar_y_validar_coordenadas(lat, lng):
 
     try:
-        # 🔥 SI ES NÚMERO → ya está bien
+        #  SI ES NÚMERO → ya está bien
         if isinstance(lat, (int, float, np.number)) and isinstance(lng, (int, float, np.number)):
             lat = float(lat)
             lng = float(lng)
@@ -177,7 +177,7 @@ def limpiar_y_validar_coordenadas(lat, lng):
             lng = float(f"{lng:.7f}")
 
         else:
-            # 🔥 si es texto
+            #  si es texto
             lat = str(lat).strip().replace(",", ".")
             lng = str(lng).strip().replace(",", ".")
 
@@ -190,7 +190,7 @@ def limpiar_y_validar_coordenadas(lat, lng):
             lng = float(f"{lng:.7f}")
 
 
-        # 🔴 SOLO bloquear 0 (como pediste)
+        #  SOLO bloquear 0 (como pediste)
         if lat == 0 or lng == 0:
             return None, None
 
