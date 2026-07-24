@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portal de Carga</title>
+
+
+    <link rel="stylesheet" href="../estaticos/estilos.css">
+    <link rel="stylesheet" href="../estaticos/funciones.js">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="cabecera">
+        <img src="../estaticos/imagenes/casita.png" class="logo">
+        <h1 class="titulo">
+        Portal de Carga de Motivos
+        </h1>   
+    </div>
+
+    <div class="contenedores">
+        <div class="area">
+            <form class="formulario_area">
+                <h2 class="titulo_area">
+                    DADc
+                </h2>
+                <hr>
+                <h3 class="titulo-interno">
+                    Selección de Archivo
+                </h3>
+                <input type="file" id="archivo_dadc" hidden>
+                <label class="selector_archivo" for="archivo_dadc" id="label_archivo_dadc">
+                    Elegir Archivo
+                </label>
+                <h3>
+                    Progreso de Carga
+                </h3>
+                <div class="barra-carga">
+                    <div class="progreso-carga" id="progreso_carga_dadc">
+
+                    </div>
+                </div>  
+                <hr>
+                <h3 class="titulo-interno">
+                    Subir Archivo
+                </h3>              
+                <button class=boton type="button" id="subir_dadc">
+                    Subir Archivo
+                </button>
+                <h3>
+                    Estado del Proceso
+                </h3>
+                <div class="barra-estados">
+
+                    <div class="etapa">
+                        <div class="indicador" id="etapa_recibido_dadc">
+                        </div>
+                        <span>
+                            Recibido
+                        </span>
+                    </div>
+
+                    <div class="etapa">
+                        <div class="indicador" id="etapa_validacion_dadc">
+                        </div>
+                        <span>
+                            Validación
+                        </span>
+                    </div>
+
+                    <div class="etapa">
+                        <div class="indicador" id="etapa_sql_dadc">
+                        </div>
+                        <span>
+                            SQL
+                        </span>
+                    </div>
+
+                    <div class="etapa">
+                        <div class="indicador" id="etapa_bigquery_dadc">
+                        </div>
+                        <span>
+                            Bigquery
+                        </span>
+                    </div>
+
+                    <div class="etapa">
+                        <div class="indicador" id="etapa_finalizado_dadc">
+                        </div>
+                        <span>
+                            Finalizado
+                        </span>
+                    </div>
+
+                </div>
+                <hr>
+                <h3 class="titulo-interno">
+                    Evaluar Pendientes
+                </h3>
+                <button type="button" class=boton id="auditar_dadc">
+                    Auditar Carga
+                </button>
+                <div id="resultados_dadc">
+
+                </div>               
+            </form>
+
+
+        </div>
+
+        <div class="area">
+
+            <form class="formulario_area">
+
+                <h2 class="titulo_area">
+                    RT
+                </h2>
+
+                <hr>
+
+                <h3 class="titulo-interno">
+                    Selección de Archivo
+                </h3>
+
+                <input type="file" id="archivo_rt" hidden>
+
+                <label
+                    class="selector_archivo"
+                    for="archivo_rt"
+                    id="label_archivo_rt">
+
+                    Elegir Archivo
+
+                </label>
+
+                <h3>
+                    Progreso de Carga
+                </h3>
+
+                <div class="barra-carga">
+
+                    <div
+                        class="progreso-carga"
+                        id="progreso_carga_rt">
+
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <h3 class="titulo-interno">
+                    Subir Archivo
+                </h3>
+
+                <button
+                    type="button"
+                    class="boton"
+                    id="subir_rt">
+
+                    Subir Archivo
+
+                </button>
+
+                <h3>
+                    Estado del Proceso
+                </h3>
+
+                <div class="barra-estados">
+
+                    <div class="etapa">
+
+                        <div
+                            class="indicador"
+                            id="etapa_recibido_rt">
+
+                        </div>
+
+                        <span>
+                            Recibido
+                        </span>
+
+                    </div>
+
+                    <div class="etapa">
+
+                        <div
+                            class="indicador"
+                            id="etapa_validacion_rt">
+
+                        </div>
+
+                        <span>
+                            Validación
+                        </span>
+
+                    </div>
+
+                    <div class="etapa">
+
+                        <div
+                            class="indicador"
+                            id="etapa_sql_rt">
+
+                        </div>
+
+                        <span>
+                            SQL
+                        </span>
+
+                    </div>
+
+                    <div class="etapa">
+
+                        <div
+                            class="indicador"
+                            id="etapa_bigquery_rt">
+
+                        </div>
+
+                        <span>
+                            Bigquery
+                        </span>
+
+                    </div>
+
+                    <div class="etapa">
+
+                        <div
+                            class="indicador"
+                            id="etapa_finalizado_rt">
+
+                        </div>
+
+                        <span>
+                            Finalizado
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <h3 class="titulo-interno">
+                    Evaluar Pendientes
+                </h3>
+
+                <button
+                    type="button"
+                    class="boton"
+                    id="auditar_rt">
+
+                    Auditar Carga
+
+                </button>
+
+                <div id="resultados_rt">
+
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="area">
+
+            <form class="formulario_area">
+
+                <h2 class="titulo_area">
+                    DADPis
+                </h2>
+
+                <hr>
+
+                <h3 class="titulo-interno">
+                    Selección de Archivo
+                </h3>
+
+                <input
+                    type="file"
+                    id="archivo_dadpis"
+                    hidden>
+
+                <label
+                    class="selector_archivo"
+                    for="archivo_dadpis"
+                    id="label_archivo_dadpis">
+
+                    Elegir Archivo
+
+                </label>
+
+                <h3>
+                    Progreso de Carga
+                </h3>
+
+                <div class="barra-carga">
+
+                    <div
+                        class="progreso-carga"
+                        id="progreso_carga_dadpis">
+
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <h3 class="titulo-interno">
+                    Subir Archivo
+                </h3>
+
+                <button
+                    type="button"
+                    class="boton"
+                    id="subir_dadpis">
+
+                    Subir Archivo
+
+                </button>
+
+                <h3>
+                    Estado del Proceso
+                </h3>
+
+                <div class="barra-estados">
+
+                    <div class="etapa">
+
+                        <div
+                            class="indicador"
+                            id="etapa_recibido_dadpis">
+
+                        </div>
+
+                        <span>
+                            Recibido
+                        </span>
+
+                    </div>
+
+                    <div class="etapa">
+
+                        <div
+                            class="indicador"
+                            id="etapa_validacion_dadpis">
+
+                        </div>
+
+                        <span>
+                            Validación
+                        </span>
+
+                    </div>
+
+                    <div class="etapa">
+
+                        <div
+                            class="indicador"
+                            id="etapa_sql_dadpis">
+
+                        </div>
+
+                        <span>
+                            SQL
+                        </span>
+
+                    </div>
+
+                    <div class="etapa">
+
+                        <div
+                            class="indicador"
+                            id="etapa_bigquery_dadpis">
+
+                        </div>
+
+                        <span>
+                            Bigquery
+                        </span>
+
+                    </div>
+
+                    <div class="etapa">
+
+                        <div
+                            class="indicador"
+                            id="etapa_finalizado_dadpis">
+
+                        </div>
+
+                        <span>
+                            Finalizado
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <h3 class="titulo-interno">
+                    Evaluar Pendientes
+                </h3>
+
+                <button
+                    type="button"
+                    class="boton"
+                    id="auditar_dadpis">
+
+                    Auditar Carga
+
+                </button>
+
+                <div id="resultados_dadpis">
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+<!-- MODAL AUDITORIA -->
+
+<div id="modal_auditoria" class="modal-auditoria">
+
+    <div class="modal-contenido">
+
+        <div class="modal-cabecera">
+
+            <h2 id="titulo_modal">
+                Auditoría
+            </h2>
+
+            <button
+                id="cerrar_modal"
+                class="boton-cerrar">
+                ✕
+            </button>
+
+        </div>
+
+        <hr>
+
+        <h3 id="resumen_modal">
+        </h3>
+
+        <div class="contenedor-tabla">
+
+            <table
+                id="tabla_auditoria"
+                class="tabla-auditoria">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Reserva</th>
+                        <th>SKU</th>
+                        <th>Sub Tipo</th>
+                        <th>Fecha Pactada</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <div class="acciones-modal">
+
+            <button
+                id="descargar_excel"
+                class="boton">
+                Descargar Excel
+            </button>
+
+            <button
+                id="cerrar_modal_2"
+                class="boton">
+                Cerrar
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="../estaticos/funciones.js">
+</script>
+
+
+</body>
+
+</html>
