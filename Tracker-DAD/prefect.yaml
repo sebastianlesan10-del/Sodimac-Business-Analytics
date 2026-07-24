@@ -1,0 +1,90 @@
+name: Geolocalizacion con wsp y DAD
+prefect-version: 3.7.5
+
+pull:
+- prefect.deployments.steps.set_working_directory:
+    directory: C:\Users\jsantoses\OneDrive - Falabella\Escritorio\Procesos_Python\9. Geolocalizacion con wsp y DAD
+
+deployments:
+
+# --------------------------------------------------
+# CORTES
+# --------------------------------------------------
+- name: tracker-corte
+
+  entrypoint: main.py:tracker_corte
+
+  work_pool:
+    name: default
+
+  schedules:
+
+    - cron: "0 11 * * *"
+      timezone: America/Lima
+      active: true
+
+    - cron: "0 13 * * *"
+      timezone: America/Lima
+      active: true
+
+    - cron: "0 16 * * *"
+      timezone: America/Lima
+      active: true
+
+    - cron: "0 18 * * *"
+      timezone: America/Lima
+      active: true
+
+
+# --------------------------------------------------
+# CAPTURAS
+# --------------------------------------------------
+- name: tracker-captura
+
+  entrypoint: main.py:tracker_captura
+
+  work_pool:
+    name: default
+
+  schedules:
+
+    - cron: "0 12 * * *"
+      timezone: America/Lima
+      active: true
+
+    - cron: "0 14 * * *"
+      timezone: America/Lima
+      active: true
+
+    - cron: "0 15 * * *"
+      timezone: America/Lima
+      active: true
+
+    - cron: "0 17 * * *"
+      timezone: America/Lima
+      active: true
+
+    - cron: "10 18 * * *"
+      timezone: America/Lima
+      active: true
+
+
+# --------------------------------------------------
+# ALERTA FINAL
+# --------------------------------------------------
+- name: tracker-alerta
+
+  entrypoint: main.py:tracker_alerta
+
+  work_pool:
+    name: default
+
+  schedules:
+
+    - cron: "15 15 * * *"
+      timezone: America/Lima
+      active: true
+
+    - cron: "15 18 * * *"
+      timezone: America/Lima
+      active: true
