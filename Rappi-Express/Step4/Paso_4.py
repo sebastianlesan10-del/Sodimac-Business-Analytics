@@ -245,7 +245,7 @@ def procesar_respuestas(df):
 # ------------------------------------------------------------------------------------------------------------------
 def enviar_alerta_teams_email(mensaje):
 
-    destinatario = "bb91f777.falabella.onmicrosoft.com@amer.teams.ms"
+    destinatario = "xxxxxx.falabella.onmicrosoft.com@amer.teams.ms"
 
     msg = MIMEText(mensaje)
     msg['Subject'] = 'Alerta Rappi'
