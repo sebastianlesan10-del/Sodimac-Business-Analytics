@@ -628,12 +628,12 @@ def procesar_archivo(df):
             tabla_temporal
         )
 
-        print("✅ DataFrame cargado")
+        print(" DataFrame cargado")
 
         crear_tabla_motivos()
         crear_tabla_detalle()
 
-        print("✅ Tabla maestra validada")
+        print(" Tabla maestra validada")
 
         print("INICIO MERGE_MOTIVOS")
         merge_motivos(
@@ -643,13 +643,13 @@ def procesar_archivo(df):
         print("FIN MERGE_MOTIVOS")
 
 
-        print("✅ Merge MOTIVO_MAESTRA ejecutado")
+        print(" Merge MOTIVO_MAESTRA ejecutado")
         print("INICIO MERGE_DETALLE")
         merge_detalle()
         print("FIN MERGE_DETALLE")
 
-        print("✅ Merge MOTIVO_DETALLE ejecutado")
-        print("✅ Merge ejecutado")
+        print(" Merge MOTIVO_DETALLE ejecutado")
+        print(" Merge ejecutado")
 
         return {
             "estado": "ok",
@@ -663,7 +663,7 @@ def procesar_archivo(df):
             tabla_temporal
         )
 
-        print("✅ Temporal eliminada")
+        print(" Temporal eliminada")
 
 
 
