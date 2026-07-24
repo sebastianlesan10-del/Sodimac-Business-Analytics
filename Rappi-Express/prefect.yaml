@@ -1,0 +1,47 @@
+# Welcome to your prefect.yaml file! You can use this file for
+# storing and managing configuration for deploying your flows.
+# We recommend committing this file to source control along
+# with your flow code.
+
+# Generic metadata about this project
+name: 10. Coordeandas Rappi - Nuevo
+prefect-version: 3.7.5
+
+# build section allows you to manage and build docker images
+build:
+
+# push section allows you to manage if and how this project
+# is uploaded to remote locations
+push:
+
+# pull section allows you to provide instructions for cloning
+# this project in remote locations
+pull:
+- prefect.deployments.steps.set_working_directory:
+    directory: C:\Users\jsantoses\OneDrive - 
+      Falabella\Escritorio\Procesos_Python\10. Coordeandas Rappi - Nuevo
+
+# the deployments section allows you to provide configuration
+# for deploying flows
+deployments:
+- name: rappi
+  version:
+  tags: []
+  concurrency_limit:
+  description:
+  entrypoint: main_prefect.py:pipeline
+  parameters: {}
+  work_pool:
+    name: default
+    work_queue_name:
+    job_variables: {}
+  schedules:
+    - cron: 20 9,11,13,15 * * *
+      timezone: America/Lima
+      day_or: true
+      active: true
+
+    - cron: 10 17 * * *
+      timezone: America/Lima
+      day_or: true
+      active: true
