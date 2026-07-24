@@ -250,7 +250,7 @@ def transformar_a_reserva(df):
                     for _, p in grupo.iterrows()
                 ]),
 
-                # campo de control opcional 🔥
+                # campo de control opcional 
                 "ENVIADO": False,
                 "FLAG_GEOCODIFICADO": False
             }
