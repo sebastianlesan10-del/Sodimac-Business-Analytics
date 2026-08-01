@@ -145,8 +145,7 @@ La solución también proporciona el detalle de reservas, motivos, submotivos y 
 
 Para conocer el análisis completo del proyecto, la arquitectura propuesta y los resultados obtenidos, consulta la presentación ejecutiva.
 
-📄 **[Presentación Ejecutiva]([Proyecto-OTIF-Agil.pdf](https://github.com/user-attachments/files/30620221/Proyecto-OTIF-Agil.pdf)
-)**
+📄 **[Presentación Ejecutiva](https://github.com/user-attachments/files/30620221/Proyecto-OTIF-Agil.pdf)**
 
 ---
 
