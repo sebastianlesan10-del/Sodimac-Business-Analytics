@@ -134,21 +134,28 @@ La solución también proporciona el detalle de reservas, motivos, submotivos y 
 
 ---
 
-# 📂 Estructura del Proyecto
+## 📂 Estructura del Proyecto
 
 ```text
-.
-├── app/
-├── static/
-├── templates/
-├── docs/
-│   ├── img/
-│   │   ├── portal.png
-│   │   ├── dashboard.png
-│   │   ├── auditoria.png
-│   │   └── detalle.png
-│   └── Presentacion_OTIF.pdf
-├── requirements.txt
+Portal-Carga-Motivos-OTIF/
+│
+├── Servicios/                  # Lógica de negocio y procesamiento
+│   ├── auditar.py              # Auditoría de registros pendientes
+│   ├── motivos.py              # Procesamiento de motivos OTIF
+│   ├── sql.py                  # Consultas a BigQuery
+│   ├── transformaciones.py     # Transformación y limpieza de datos
+│   └── validaciones.py         # Validaciones de archivos y reglas de negocio
+│
+├── estaticos/
+│   ├── estilos.css             # Estilos de la aplicación
+│   ├── funciones.js            # Funciones del lado del cliente
+│   └── imagenes/               # Recursos gráficos
+│
+├── vistas/
+│   └── index.html              # Interfaz principal del portal
+│
+├── Dockerfile                  # Contenedor para despliegue en Cloud Run
+│
 └── README.md
 ```
 
