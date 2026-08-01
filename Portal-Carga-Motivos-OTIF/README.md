@@ -45,6 +45,32 @@ El flujo general del proceso es el siguiente:
 
 ---
 
+## 🔄 Flujo del Proceso
+
+El siguiente diagrama resume el flujo completo del procesamiento, desde la carga del archivo hasta la actualización automática de los indicadores.
+
+```mermaid
+flowchart TD
+
+    A["👤 Usuario"] --> B["📂 Carga de archivo Excel"]
+
+    B --> C["🌐 Portal Web<br/>(FastAPI)"]
+
+    C --> D["✅ Validación de estructura<br/>y contenido"]
+
+    D --> E["🔄 Transformación<br/>de datos"]
+
+    E --> F["🗄️ BigQuery"]
+
+    F --> G["📊 Actualización automática<br/>Looker Studio"]
+
+    F --> H["🔍 Auditoría automática"]
+
+    H --> I["📄 Exportación de observaciones<br/>en Excel"]
+```
+
+---
+
 # 🖥️ Portal de Carga
 
 El portal permite que cada área cargue sus archivos de forma independiente y supervise el estado del procesamiento en tiempo real.
