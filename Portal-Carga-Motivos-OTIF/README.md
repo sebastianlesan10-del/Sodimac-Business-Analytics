@@ -145,7 +145,8 @@ La solución también proporciona el detalle de reservas, motivos, submotivos y 
 
 Para conocer el análisis completo del proyecto, la arquitectura propuesta y los resultados obtenidos, consulta la presentación ejecutiva.
 
-📄 **[Presentación Ejecutiva](docs/Presentacion_OTIF.pdf)**
+📄 **[Presentación Ejecutiva]([Proyecto-OTIF-Agil.pdf](https://github.com/user-attachments/files/30620221/Proyecto-OTIF-Agil.pdf)
+)**
 
 ---
 
@@ -155,5 +156,4 @@ Para conocer el análisis completo del proyecto, la arquitectura propuesta y los
 
 Ingeniero de Datos | Automatización | Python | Google Cloud Platform
 
-- GitHub: https://github.com/TU_USUARIO
-- LinkedIn: https://linkedin.com/in/TU_PERFIL
+- LinkedIn: www.linkedin.com/in/jose-sebastian-santos-espinoza-data
